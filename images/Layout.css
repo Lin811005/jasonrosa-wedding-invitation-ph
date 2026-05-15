@@ -1,0 +1,462 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*基本*/
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body{ margin:0; padding:0;}
+
+.bg{position: absolute;width: 100%;height: 100%;position: fixed;}
+/*全BOX版面*/
+.WRAPPER { position: relative; display:block; margin: 0 auto; padding: 0; width:100%;  min-width:1220px; overflow:hidden; font-family:"微軟正黑體","Microsoft JhengHei",Helvetica; background: #f3f9ff;}
+.WRAPPER img { border:0px; vertical-align:top;width: 100%;}
+#MoreBox .MoreBoxImg{ width: 100%;}
+.WRAPPER a { text-decoration:none;}
+		@media screen and (max-width:767px){
+		/* .WRAPPER { min-width: inherit; padding-bottom:150px; } */
+		.WRAPPER { min-width: inherit; }
+		.WRAPPER img {  width:100%;  height:auto;}
+		#MoreBox .MoreBoxImg{ width: 100%;}
+		.ProdBox{ width: 100%;}
+	}
+/*背景*/
+.bgtop  { z-index:0; position:absolute; top:0; left:0; width:100%; min-width:1220px; height:100%; background: url(bgtop.png) repeat-x center top ;}
+	@media screen and (max-width:767px){
+		.bgtop { min-width: inherit;  background: url(m_bgtop.jpg) no-repeat center 40px; background-size:100%;}
+	}
+
+
+/*區塊_all*/
+.Area { position: relative; margin:0 auto; padding:0; border-radius:0; text-align:center; }
+.Area a { display:block;width: 100%;} 
+.Area .go_bt {
+  -webkit-transition: all 0.4s ease;
+     -moz-transition: all 0.4s ease;
+      -ms-transition: all 0.4s ease;
+       -o-transition: all 0.4s ease;
+          transition: all 0.4s ease;}
+.Area .go_bt:hover {
+  -webkit-transform:scale(0.95);
+     -moz-transform:scale(0.95);
+      -ms-transform:scale(0.95);
+       -o-transform:scale(0.95);
+          transform:scale(0.95);}
+.Area1220 { margin:0 auto; width:1220px;}
+.Area960 { margin:0 auto; width:960px;}
+	@media screen and (max-width:767px){
+		.Area1220 { width:100%;}
+		.Area960 { width:100%;}
+		/*區塊_切割*/
+		.Area_1bn { margin: 0 auto; padding:0; overflow:hidden;}
+		.Area_1bn a { float:left; margin:0 0 2% 0; padding:0; width:100%; list-style: none;}
+		.Area_2bn { margin: 0 auto; padding:0; overflow:hidden;}
+		.Area_2bn a { float:left; margin:0 1% 2%; padding:0; width:48%; list-style: none;}
+		.Area_3bn { margin: 0 auto; padding:0; overflow:hidden;}
+		.Area_3bn a { float:left; margin:0 1% 2% ; padding:0; width:31.3%; list-style: none;}
+		.Area_1bn_nopadding { margin: 0 auto; padding:0; overflow:hidden;}
+		.Area_1bn_nopadding a { float:left; margin:0; padding:0; width:100%; list-style: none;}
+		.Area_2bn_nopadding { margin: 0 auto; padding:0; overflow:hidden;}
+		.Area_2bn_nopadding a { float:left; margin:0; padding:0; width:50%; list-style: none;}
+		.Area_3bn_nopadding { margin: 0 auto; padding:0; overflow:hidden;}
+		.Area_3bn_nopadding a { float:left; margin:0; padding:0; width:33.3%; list-style: none;}
+	}
+
+
+/*版頭*/
+.Area_top {}
+.Area_top .momologo { z-index:2; position: absolute;top: 15px; left:40px;}
+.Area_top .momologo a { display:block; width:200px; height:30px; background: url(momo_logo.png) no-repeat;}
+.Area_top .momologo a:hover{ background: url(momo_logo_on.png) no-repeat;}
+	@media screen and (max-width:767px){
+		.Area_top { height: auto;}
+		.Area_top .momologo { display:none;}
+	}
+
+	
+/*隱鑶*/
+.for_pc {}
+.for_phone { display:none !important;}
+	@media screen and (max-width:767px){
+		.for_pc { display:none !important;}
+		.for_phone { display: inherit !important;}
+	}
+
+/* 連結 */
+#linkToOther , #linkToLocal{
+	display: flex;
+	justify-content: space-between;
+	background-color: #e4e4e4;
+}
+#linkToOther a , #linkToLocal a{
+	width: 33%;
+}
+
+
+
+
+/* block1 區域包裝器 */
+.block1-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  /* 按鈕1 */
+.cta-button1 {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20%;
+  display: block;
+
+  /* 漂浮動畫 */
+  animation: floating 2.5s ease-in-out infinite;
+}
+
+/* 上下漂浮 */
+@keyframes floating {
+  0% {
+    transform: translateX(-50%) translateY(0px) scale(1);
+  }
+
+  50% {
+    transform: translateX(-50%) translateY(-12px) scale(1);
+  }
+
+  100% {
+    transform: translateX(-50%) translateY(0px) scale(1);
+  }
+}
+}
+
+
+  
+  /* 按鈕內的圖片大小設定 */
+  .cta-button1 img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* 按鈕2 */
+    .cta-button2 {
+        position: absolute;
+        top: 77.7%; /* 自行調整想要的距離 */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 20%; /* 或你希望的寬度比例 */
+        display: block;
+      }
+      
+      /* 按鈕內的圖片大小設定 */
+      .cta-button2 img {
+        width: 100%;
+        height: auto;
+      }
+
+  /* 按鈕3 */
+  .cta-button3 {
+    position: absolute;
+    top: 82.3%; /* 自行調整想要的距離 */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20%; /* 或你希望的寬度比例 */
+    display: block;
+  }
+  
+  /* 按鈕內的圖片大小設定 */
+  .cta-button3 img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* 按鈕4 */
+  .cta-button4 {
+    position: absolute;
+    top: 86.9%; /* 自行調整想要的距離 */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20%; /* 或你希望的寬度比例 */
+    display: block;
+  }
+  
+  /* 按鈕內的圖片大小設定 */
+  .cta-button4 img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* 按鈕5 */
+  .cta-button5 {
+    position: absolute;
+    top: 91.6%; /* 自行調整想要的距離 */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20%; /* 或你希望的寬度比例 */
+    display: block;
+  }
+  
+  /* 按鈕內的圖片大小設定 */
+  .cta-button5 img {
+    width: 100%;
+    height: auto;
+  }  
+
+/* 影片動圖 */
+video{
+	width: 100%;
+	margin-bottom: -2px;
+	display: block;
+}
+
+
+/* 回到首頁圖片 */
+#gotopImg{
+	position: fixed;
+	bottom: 5%;
+	right: 0px;
+	width: 5%;
+}
+@media screen and (max-width:767px){
+	#gotopImg{width: 10%;}
+}
+
+/* 更多介紹、其他商品連結區域 */
+#MoreBox ,.ProdBox{display: flex;}
+
+/* buy按鈕1 */
+#BuyButton1{
+	z-index: 2;
+    top: 5.3%;
+    width: 25%;
+    position: absolute;
+    margin: auto;
+    left: 1%;
+    right: 0px;
+}
+
+/* buy按鈕2 */
+#BuyButton2{
+    width: 25%;
+    position: absolute;
+    margin: 2060px auto 0;
+    left: 1%;
+    right: 0px;
+}
+/* --------------------------------------------- */
+
+/* buy按鈕_功能區1 */
+#BuyButton3{
+    z-index: 2;
+    margin-top:0%;
+    width: auto;
+    position: absolute;
+    margin: 28px auto;
+    left: -517px;
+    right: 0px;
+}
+
+/* buy按鈕_功能區2 */
+#BuyButton4{
+    z-index: 2;
+    margin-top:0%;
+    width: auto;
+    position: absolute;
+    margin: 28px auto;
+    left: 425px;
+    right: 0px;
+}
+
+/* buy按鈕_功能區3 */
+#BuyButton5{
+    z-index: 2;
+    margin-top:0%;
+    width: auto;
+    position: absolute;
+    margin: 242px auto;
+    left: -700px;
+    right: 0px;
+}
+
+/* buy按鈕_功能區4 */
+#BuyButton6{
+    width: auto;
+    position: absolute;
+    margin: 242px auto;
+    left: 243px;
+    right: 0px;
+}
+
+/* buy按鈕_功能區5 */
+#BuyButton7{
+    z-index: 2;
+    margin-top:0%;
+    width: auto;
+    position: absolute;
+    margin: 465px auto;
+    left: 706px;
+    right: 0px;
+}
+
+/* buy按鈕_功能區6 */
+#BuyButton8{
+    z-index: 2;
+    margin-top:0%;
+    width: auto;
+    position: absolute;
+	margin: 833px auto;
+    left: 0px;
+    right: 630px;
+}
+
+/* buy按鈕_功能區7 */
+#BuyButton9{
+    z-index: 2;
+    margin-top:0%;
+    width: auto;
+    position: absolute;
+	margin: 833px auto;
+    left: 0px;
+    right: 0px;
+}
+
+/* buy按鈕_功能區8 */
+#BuyButton10{
+    z-index: 2;
+    margin-top:0%;
+    width: auto;
+    position: absolute;
+	margin: 833px auto;
+    left: 632px;
+    right: 0px;
+}
+
+/* buy按鈕_功能區9 */
+#BuyButton11{
+    z-index: 2;
+    margin-top:0%;
+    width: auto;
+    position: absolute;
+	margin: 1054px auto;
+    left: 0px;
+    right: 630px;
+}
+
+/* buy按鈕_功能區10 */
+#BuyButton12{
+    width: auto;
+    position: absolute;
+	margin: 1154px auto;
+    left: 320px;
+    right: 00px;
+}
+
+
+
+.menu {height: 0; width: 100%; position: absolute; opacity: 0;transition: all 1s ease .1s}
+.menu.open{height: 960px; width: 100%; opacity: 1; }
+
+/* ----------------------手機版---------------------- */
+@media screen and (max-width:767px){
+	#BuyButton2
+	{    width: 25vw;
+    margin-top: 214.5vw; }
+}
+
+@media screen and (max-width:767px){
+	#BuyButton3
+	{   width: 43.3%;
+    	margin-top: 3vw;
+    	left: -54vw;
+		
+	}
+}
+
+@media screen and (max-width:767px){
+	#BuyButton4
+	{      width: 54.8%;
+    	   margin-top: 3vw;
+   	 	   left: 44vw;
+	}
+}
+
+@media screen and (max-width:767px){
+	#BuyButton5
+	{      width: 24.4%;
+           margin-top: 25.5vw;
+           left: -72vw;
+	}
+}
+
+@media screen and (max-width:767px){
+	#BuyButton8
+	{     width: 32.2%;
+          margin-top: 87vw;
+          left: 1.5vw;
+	}
+}
+
+@media screen and (max-width:767px){
+	#BuyButton11
+	{      width: 32.2%;
+           margin-top: 110vw;
+           left: 1.5vw;
+	}
+}
+
+@media screen and (max-width:767px){
+	#BuyButton6
+	{      width: 73.8%;
+           margin-top: 25.5vw;
+           left: 25vw;
+	}
+}
+
+@media screen and (max-width:767px){
+	#BuyButton7
+	{      width: 25.5%;
+           margin-top: 48.5vw;
+           left: 73vw;
+	}
+}
+
+@media screen and (max-width:767px){
+	#BuyButton9
+	{      width: 32.2%;
+          margin-top: 87vw;
+          left: 1vw;
+	}
+}
+
+@media screen and (max-width:767px){
+	#BuyButton10
+	{      width: 32.2%;
+          margin-top: 87vw;
+          left: 66.5vw;
+	}
+}
+
+@media screen and (max-width:767px){
+	#BuyButton12
+	{      width: 65%;
+          margin-top: 120vw;
+          left: 34vw;
+	}
+}
+
+ .swiper-button-next .swiper-rtl .swiper-button-prev {right: 10px;left: auto;color: white;
+
+
+.box_1, .box_3, .box_1_m, .box_5_m {
+  animation: box_flow 3s infinite;
+}
+
+/* 標題&彩帶_漂浮_指令 */
+
+@keyframes box_flow {
+0%   { transform:  translateY(10px);}
+50%  { transform:  translateY(30px);}
+100% { transform:  translateY(10px);}
+}

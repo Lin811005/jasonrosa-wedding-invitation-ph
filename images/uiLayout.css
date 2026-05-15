@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*回版頭*/
+#gotop { display: none; position:fixed; z-index:5; right:20px; bottom:30px;padding:10px 10px 3px 10px; border-radius:50px; font:12px/30px Verdana; text-align:center; color:#000;  background-color:rgba(255,255,255,0.7); cursor:pointer;
+  -webkit-transition: all 0.3s ease;
+     -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+       -o-transition: all 0.3s ease;
+          transition: all 0.3s ease;}
+#gotop:hover { padding-top:40px; background-color:#fff;} 
+#gotop::before { content: ""; position:absolute; top:7px; left:18px; width: 0; height: 0; border: 4px solid #000; border-color: transparent transparent #000; }
+	@media screen and (max-width:767px){
+		#gotop { right:20px; bottom:20px; }
+	}
