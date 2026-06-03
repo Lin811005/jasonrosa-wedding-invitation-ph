@@ -1,123 +1,170 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-<meta name="format-detection" content="telephone=no">
-<meta name="format-detection" content="address=no">
-<title>Jason&Rosa-Wedding-Invitation-Penghu</title>
-<link rel="stylesheet" type="text/css" href="images/Layout.css">
-<link rel="stylesheet" type="text/css" href="images/uiLayout.css">
-<script charset="utf-8" language="javascript" type="text/javascript" src="https://image.momoshop.com.tw/ecm/js/jquery-1.12.4.js?t=20200511001"></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jason & Rosa 婚禮邀請函</title>
+    <!-- 樣式表 -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico">
 </head>
+
 <body>
-  
-<div class="WRAPPER"> 
-  
-    <!--版頭-->
-    <div class="Area Area960 Area_top" >
 
-      <div class="block1-container">
-
-        <img src="./images/block_0.jpg" alt="背景圖">
-
-      </div>
-		
-	  <style>
-	  
-	  .btn{position:absolute;color: aliceblue; background-color:#323232;border-radius: 30px;width: 150px ;text-align:center;
-		  ;margin: auto}
-		 
-	  </style>
-
-    <div class="block1-container">
-
-        <img src="./images/block_1.jpg" alt="背景圖">
-
-    </div>
-
-    <div class="block1-container">
-
-        <img src="./images/block_ph_2.jpg" alt="背景圖">
-        <img class="cta-button1" src="./images/object_1.png" alt="CTA按鈕">
-        <img class="cta-button1" src="./images/object_2.png" alt="">
-
-        <img src="./images/block_ph_3.jpg" alt="背景圖">
-
-    </div>
-
-
+<!-- 💡 全新加入：開場全覆蓋 Popup 區塊（圖片更換為影片） -->
+<div class="welcome-popup">
+    <!-- 
+      autoplay: 自動播放
+      muted: 靜音（手機版規定必須靜音才能自動播放）
+      playsinline: 在網頁內直接播放（防止 iPhone 點開全螢幕自帶播放器）
+    -->
+    <video src="images/magnific_video-upscale_EqnXPYpuuO.mp4" autoplay muted playsinline></video>
 </div>
-<!--↑WRAPPER↑-->
-<style>
-.swiper2 {
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-  height: auto;
-  margin-top: 450px;  
-	
-}	 
-	@media screen and (max-width:767px){
-		.swiper2{ margin-top: 46vw;}
-	}	
-	
-</style>
-		  
-	  
-		 
-<script   src="https://code.jquery.com/jquery-3.6.0.js"   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="   crossorigin="anonymous"></script>
-	
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>	
- <script src="images/main.js"></script>	
 
-<style>		  
-.swiper-button-prev, .swiper-rtl .swiper-button-next {
-    left: 10px;
-    right: auto;
-    color: white;
-}
-</style>	
-		  
-<style>		  
-.swiper-button-next, .swiper-rtl .swiper-button-prev {
-    right: 10px;
-    left: auto;
-	color:white
-}
-</style> 
-<style>			  
-.swiper-pagination {
-    border-bottom-color: white
-}		  
-</style> 
-<style>
-.swiper-pagination-bullet-active {
-    opacity: var(--swiper-pagination-bullet-opacity, 1);
-    background: var(--swiper-pagination-color,var(--swiper-theme-color));
-    background-color: white;
-}
-</style>
-		  
-<style>	
-.swiper3 {
- overflow: hidden;
-  position: absolute;
-  width: 100%;
-  height: auto;
-  margin-top: 1037px;  
-	
-}	 
-	@media screen and (max-width:767px){
-		.swiper3{ margin-top: 105vw;}
-}		  
-</style>	
-		  
+<!-- 第一個區塊 -->
+<div class="mobile-only-box smoove" data-move-y="100px">
+    <img src="images/block_1.jpg" alt="手機版廣告圖 1">
+</div>    
+
+
+<!-- 第一個區塊 -->
+<div class="mobile-only-box smoove" data-move-y="100px">
+    <img src="images/block_1.jpg" alt="手機版廣告圖 1">
+</div>
+
+
+
+    <!-- 第二個區塊 -->
+    <div class="mobile-only-box">
+        <!-- 1. 最底層：墊底的背景圖（固定不動） -->
+        <img src="images/block_2_bg.jpg" alt="手機版廣告圖 2">
+        
+        <!-- 2. 中間層：只有這張圖套用滾動動畫（由下往上淡入） -->
+        <div class="overlay-img kv-fade-in">
+            <img src="images/block_2_picture.png" alt="疊在上面的圖">
+        </div>
+
+        <!-- 3. 最頂層：全新疊加的第三張圖（負責單純的無限上下漂浮） -->
+        <div class="overlay-floating">
+            <img src="images/block_2_decorate.png" alt="最上層漂浮圖"> 
+        </div>
+    </div>
+
+    <!-- 第三個區塊 -->
+    <div class="mobile-only-box">
+        <!-- 1. 最底層：墊底的背景圖（固定不動） -->
+        <img src="images/block_3_bg.jpg" alt="手機版廣告圖 2">
+        
+    <!-- 2. 中間層：文字圖群組（依序淡入維持不變） -->
+    <div class="overlay-img kv-fade-in"><img src="images/block_3_text_1.png" alt="疊在上面的圖"></div>
+    <div class="overlay-img kv-fade-in"><img src="images/block_3_text_2.png" alt="疊在上面的圖"></div>
+    <div class="overlay-img kv-fade-in"><img src="images/block_3_text_3.png" alt="疊在上面的圖"></div>
+
+        <!-- 3. 最頂層：全新疊加的第三張圖（負責單純的無限上下漂浮） -->
+        <div class="overlay-floating">
+            <img src="images/block_3_decorate.png" alt="最上層漂浮圖"> 
+        </div>
+    </div>
+
+    <!-- 第四個區塊 -->
+<div class="mobile-only-box">
+    <!-- 1. 最底層：背景圖 -->
+    <img src="images/block_4_bg.jpg" alt="手機版廣告圖 4">
+    
+    <!-- 2. 中間層：文字圖群組（依序淡入維持不變） -->
+    <div class="overlay-img kv-fade-in"><img src="images/block_4_text_1.png" alt="疊在上面的圖"></div>
+    <div class="overlay-img kv-fade-in"><img src="images/block_4_text_2.png" alt="疊在上面的圖"></div>
+    <div class="overlay-img kv-fade-in"><img src="images/block_4_text_3.png" alt="疊在上面的圖"></div>
+
+    <!-- 3. 最頂層：全新更換為專屬的 class="overlay-sway" -->
+    <div class="overlay-sway">
+        <img src="images/block_4_decorate_1.png" alt="最上層微調旋轉圖 1"> 
+    </div>
+
+    <div class="overlay-sway">
+        <img src="images/block_4_decorate_2.png" alt="最上層微調旋轉圖 2"> 
+    </div>
+</div>
+
+    <!-- 第五個區塊 -->
+    <div class="mobile-only-box">
+        <!-- 1. 最底層：墊底的背景圖（固定不動） -->
+        <img src="images/block_5_bg.gif" alt="手機版廣告圖 2">
+        
+        <!-- 2. 中間層：只有這張圖套用滾動動畫（由下往上淡入） -->
+        <div class="overlay-img kv-fade-in">
+            <img src="images/block_5_picture.png" alt="疊在上面的圖">
+        </div>
+
+        <!-- 3. 最頂層：全新疊加的第三張圖（負責單純的無限上下漂浮） -->
+        <div class="overlay-img kv-fade-in">
+            <img src="images/block_5_decorate.png" alt="最上層漂浮圖"> 
+        </div>
+    </div>
+
+    <!-- 第六個區塊 -->
+    <div class="mobile-only-box">
+        <!-- 1. 最底層：墊底的背景圖（固定不動） -->
+        <img src="images/block_6_bg.jpg" alt="手機版廣告圖 2">
+        
+    <!-- 2. 中間層：文字圖群組（依序淡入維持不變） -->
+    <div class="overlay-img kv-fade-in"><img src="images/block_6_decorate_1.png" alt="疊在上面的圖"></div>
+    <div class="overlay-img kv-fade-in"><img src="images/block_6_decorate_2.png" alt="疊在上面的圖"></div>
+    <div class="overlay-img kv-fade-in"><img src="images/block_6_decorate_3.png" alt="疊在上面的圖"></div>
+
+    </div>    
+
+        <!-- 第七個區塊 -->
+    <div class="mobile-only-box">
+        <!-- 1. 最底層：墊底的背景圖（固定不動） -->
+        <img src="images/block_7_bg.jpg" alt="手機版廣告圖 2">
+        
+    <!-- 2. 中間層：文字圖群組（依序淡入維持不變） -->
+    <div class="overlay-img kv-fade-in"><img src="images/block_7_text_1.png" alt="疊在上面的圖"></div>
+        <div class="overlay-img kv-fade-in"><img src="images/block_7_decorate_1.png" alt="疊在上面的圖"></div>
+        <div class="overlay-img kv-fade-in"><img src="images/block_7_decorate_2.png" alt="疊在上面的圖"></div>
+        <div class="overlay-img kv-fade-in"><img src="images/block_7_decorate_3.png" alt="疊在上面的圖"></div>
+        <div class="overlay-img kv-fade-in"><img src="images/block_7_decorate_4.png" alt="疊在上面的圖"></div>     
+        <div class="overlay-img kv-fade-in"><img src="images/block_7_decorate_5.png" alt="疊在上面的圖"></div>      
+        <div class="overlay-img kv-fade-in"><img src="images/block_7_decorate_6.png" alt="疊在上面的圖"></div>     
+        <div class="overlay-img kv-fade-in"><img src="images/block_7_decorate_7.png" alt="疊在上面的圖"></div>    
+
+    </div>   
+
+ <!-- 第八個區塊 -->
+<div class="mobile-only-box">
+    <!-- 1. 最底層：背景圖 -->
+    <img src="images/block_8_bg.jpg" alt="手機版廣告圖 2">
+    
+    <!-- 2. 💡 成功轉職：加入 kv-fade-in，排在隊伍最前方準備最先淡入 -->
+    <div class="overlay-img pure-fade-in">
+        <img src="images/block_8_decorate_1.png" alt="最先淡入的裝飾圖 1">
+    </div>
+
+    <!-- 3. 維持不變：無限上下漂浮圖 -->
+    <div class="overlay-floating">
+        <img src="images/block_8_decorate_2.png" alt="繼續無限上下漂浮的圖">
+    </div>
+
+    <!-- 4. 中間層文字：排在後面跳出的文字圖群組 -->
+    <div class="overlay-img kv-fade-in"><img src="images/block_8_text_1.png" alt="隨後淡入的文字 1"></div>
+    <div class="overlay-img kv-fade-in"><img src="images/block_8_text_2.png" alt="最後淡入的文字 2"></div>  
+</div>
+
+
+
+    <!-- 1. jQuery 核心 -->
+    <script src="https://jquery.com"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- 2. jQuery Smoove 外掛（★已修正為真正的 cdnjs 實體檔案路徑） -->
+    <script src="https://cloudflare.com"></script>
+
+    <!-- 3. 自訂的獨立 JS 檔案（★所有的初始化都集中在這裡管理即可） -->
+    <script src="script/script.js"></script>
 </body>
 
-		  
-		  
-		  
 </html>
+
+
